@@ -13,7 +13,6 @@ import com.google.android.gms.wallet.*
 import org.json.JSONException
 import org.json.JSONObject
 
-import o.akuma.hngx_in_app_purchase.R
 import o.akuma.hngx_in_app_purchase.viewmodel.CheckoutViewModel
 import o.akuma.hngx_in_app_purchase.databinding.ActivityCheckoutBinding
 
