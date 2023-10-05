@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "In_app_purchase_package"
 include(":app")
-include(":hngx_in-app-purchase")
+include(":hngx_In_App_Payment")
