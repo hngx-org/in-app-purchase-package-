@@ -5,16 +5,20 @@ plugins {
 
 android {
     namespace = "o.akuma.in_app_purchase_package"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "o.akuma.in_app_purchase_package"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding = true
     }
 
     buildTypes {
@@ -26,6 +30,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -37,7 +42,11 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation(project(path = ":hngx_In_App_Payment"))
+
+    implementation ("com.google.android.gms:play-services-wallet:19.2.1")
+
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
