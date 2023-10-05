@@ -9,7 +9,7 @@ Install
 
 Add the payment package to your dependencies in your app's build.gradle file as follows:
 
-   ` implementation 'com.github.hngx-org:in-app-purchase-package:1.2.0'`
+   `implementation 'com.github.hngx-org:in-app-purchase-package-:1.2.2'`
 
 In your settings.gradle file, inside your `repositories` code block, include the Jitpack URL as a Maven repository:
 
