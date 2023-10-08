@@ -38,7 +38,7 @@ class BuyWithGooglePay @JvmOverloads constructor(
         GooglePayButtonBinding.inflate(LayoutInflater.from(context), this, true)
 
     //    Global variables
-    private var textColor: Int = Color.parseColor("#FFFFFF")
+   // private var textColor: Int = Color.parseColor("#FFFFFF")
     private var _price = 0L
     private var _shippingCost = 0L
     private var _paymentsClient: PaymentsClient? = null
@@ -129,7 +129,7 @@ class BuyWithGooglePay @JvmOverloads constructor(
     }
 
 
-    private fun requestPayment(price: Long, shippingCost: Long) {
+    fun requestPayment(price: Long, shippingCost: Long) {
         Log.d("TAG", "requestPayment: Called")
         Log.d("TAG", "requestPayment: $price, $shippingCost")
         if (_price == 0L || _shippingCost == 0L) {
